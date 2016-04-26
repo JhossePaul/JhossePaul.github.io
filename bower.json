@@ -1,0 +1,29 @@
+{
+  "name": "src",
+  "description": "Personal Portafolio",
+  "main": "",
+  "authors": [
+    "Jhosse Paul Márquez Ruíz <mcromanceva@hotmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "portafolio",
+    "data",
+    "science",
+    "statistcs",
+    "programming",
+    "developer"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "^3.3.0",
+    "jquery": "^2.2.3"
+  }
+}
