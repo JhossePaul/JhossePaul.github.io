@@ -1,10 +1,21 @@
 extends layouts/_layout-primary
 
 block content
+
+    section.sample
+        .container
+            .row--flex.vertical
+                svg.icon.odin
+                use(xlink:href='#odin')
+            h1 Bienvenidos
+            h4 Ground Zero
+
     a(name="about")
     div.intro-header
         div.container
             div.row
+                svg.icon.odin
+                use(xlink:href='#odin')
                 div.col-lg-12
                     div.intro-message
                         img.img-responsive.img-thumbnail.profile-picture(src="/img/cv.jpg")
@@ -56,13 +67,12 @@ block content
                         div.clearfix
                         h2.section-heading Scientific Computing <br> Data Visualization
                         p.lead.
-                            Great expertise in data fetching, warehouse, wrangling, mining,
-                            and analysis. Highly creative real-time visualization with the 
+                            Great expertise in data analysis. Highly creative real-time visualization with the 
                             best and most popular scientific programming languages
                     div.col-lg-5.col-lg-offset-2.col-sm-6
                         div.col-sm-4 
-                            svg.icon.rlogo
-                                use(xlink:href="#rlogo")
+                            svg.icon.odin
+                                use(xlink:href='#odin')
 
 block scripts
     script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")

@@ -7,8 +7,6 @@
   "devDependencies": {
     "browser-sync": "^2.12.5",
     "coffee-script": "^1.10.0",
-    "css-select": "^1.2.0",
-    "css-what": "^2.1.0",
     "del": "^2.2.0",
     "graceful": "^1.0.0",
     "gulp": "^3.9.1",
@@ -28,7 +26,6 @@
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-pug": "^2.0.0",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-svgmin": "^1.2.2",
@@ -38,8 +35,6 @@
     "gulp-util": "^3.0.7",
     "imagemin-pngquant": "^4.2.2",
     "jade": "^1.11.0",
-    "lodash": "^4.11.1",
-    "pug": "^2.0.0-alpha6",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5"
   },

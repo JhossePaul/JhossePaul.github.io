@@ -1,7 +1,9 @@
 module.exports = 
     # Acá se añaden las rutas a los archivos scss obtenidos de bower
     sassIncludes: [
-        "./src/bower/bootstrap/scss"
+        "./src/bower/bem-constructor/dist"
+        "./src/bower/jeet/scss"
+        "./src/bower/modular-scale/stylesheets"
     ]
     # Acá se añaden las rutas a los archivos js obtenidos por bower
     scriptFiles: [

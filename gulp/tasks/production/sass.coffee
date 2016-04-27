@@ -7,18 +7,13 @@ plugins       = require 'gulp-load-plugins'
 $             = plugins()
 
 gulp.task 'production:sass', ->
-    gulp.src './src/sass/**/!(_)*.sass'
-    .pipe $.plumber(errorHandler: onError)
-    .pipe $.sass
-        includePaths : config.sassIncludes
-    .pipe $.autoprefixer
-        browsers : ['last 2 versions']
-    .pipe $.groupCssMediaQueries()
-    .pipe $.csscomb()
-    .pipe gulp.dest './dist/css/'
-    .pipe browserSync.reload(stream : true)
-                      
-                        
-                        
-                        
-                        
+  gulp.src './src/sass/**/!(_)*.sass'
+  .pipe $.plumber(errorHandler: onError)
+  .pipe $.sass
+    includePaths : config.sassIncludes
+  .pipe $.autoprefixer
+    browsers : ['last 2 versions']
+  .pipe $.groupCssMediaQueries()
+  .pipe $.csscomb()
+  .pipe gulp.dest './dist/css/'
+  .pipe browserSync.reload(stream : true)

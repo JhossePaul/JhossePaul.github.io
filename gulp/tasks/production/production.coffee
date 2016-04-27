@@ -1,28 +1,43 @@
 'use strict'
-gulp          = require 'gulp'
-browserSync   = require 'browser-sync'
-onError       = require '../error'
-plugins       = require 'gulp-load-plugins'
-$             = plugins()
-  
-  
-gulp.task 'production:coffee', ->
-    gulp.src './src/coffee/**/*.coffee'
-    .pipe $.plumber(errorHandler: onError)
-    .pipe $.coffee()
-    .pipe $.concat 'app.js'
-    .pipe $.uglify
-        preserveComments : 'license'
-    .pipe gulp.dest './dist/js/'
-    .pipe browserSync.reload(stream : true)
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+gulp              = require 'gulp'
+browserSync       = require 'browser-sync'
+runSequence       = require('run-sequence').use(gulp)
+
+# Serious Watch Command
+gulp.task 'production:watch', ['browsersync'], ->
+  gulp.watch 'src/jade/**'  , ['production:jade']
+  gulp.watch 'src/sass/**'  , ['production:sass']
+  gulp.watch 'src/coffee/**', ['production:coffee']
+  gulp.watch 'src/bower/**', ['production:scripts', 'production:sass']
+  gulp.watch 'src/img/**'   , ['imagemin']
+  gulp.watch 'src/assets/**', ['assets']
+  gulp.watch 'src/svg/**', ['svg', 'production:jade']
+  gulp.watch 'src/fonts/**/*', ['fonts']
+
+
+
+# Default Production task Because YOLOP
+gulp.task 'production', ->
+  runSequence 'clean',
+    'production:scripts',
+    'production:coffee',
+    'fonts',
+    'production:sass',
+    'imagemin',
+    'assets',
+    'svg',
+    'production:jade',
+    'production:watch'
+
+
+# Default Production task Because YOLOP
+gulp.task 'production:noWatch', ->
+  runSequence 'clean',
+    'production:scripts',
+    'production:coffee',
+    'fonts',
+    'production:sass',
+    'imagemin',
+    'assets',
+    'svg',
+    'production:jade'

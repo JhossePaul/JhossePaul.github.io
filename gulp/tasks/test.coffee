@@ -1,5 +1,6 @@
 'use strict'
-gulp = require "gulp"
 
-gulp.task "test", -> 
-    console.log "Proyecto inicializado sin problemas"
+gulp = require 'gulp'
+
+gulp.task 'test', ->
+  console.log '🚀 Houston, todo en orden 🚀'
