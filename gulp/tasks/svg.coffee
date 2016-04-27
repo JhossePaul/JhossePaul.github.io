@@ -18,8 +18,8 @@ gulp.task 'svg:inline', ->
     )
     .pipe $.cheerio(
         run: (jQuery) ->
-        jQuery('[fill]').removeAttr 'fill'
-        jQuery('[stroke]').removeAttr 'stroke'
+            jQuery('[fill]').removeAttr 'fill'
+            jQuery('[stroke]').removeAttr 'stroke'
         parserOptions :
             xmlMode : true
     )
@@ -35,8 +35,8 @@ gulp.task 'svg:external', ->
     )
     .pipe $.cheerio(
         run: (jQuery) ->
-        jQuery('[fill]').removeAttr 'fill'
-        jQuery('[stroke]').removeAttr 'stroke'
+            jQuery('[fill]').removeAttr 'fill'
+            jQuery('[stroke]').removeAttr 'stroke'
         parserOptions :
             xmlMode : true
     )

@@ -1,12 +1,12 @@
 module.exports = 
     # Acá se añaden las rutas a los archivos scss obtenidos de bower
     sassIncludes: [
-        # "./src/bower/bem-constructor/dist"
+        "./src/bower/bootstrap/scss"
     ]
     # Acá se añaden las rutas a los archivos js obtenidos por bower
     scriptFiles: [
         "./src/bower/jquery/dist/jquery.min.js"
-        "./src/bower/reveal.js/js/reveal.js"
+        "./src/bower/wow/dist/wow.min.js"
     ]
     # Archivos HTML que deben pasar por uncss
     uncssHTML: [
