@@ -1,6 +1,8 @@
 extends layouts/_layout-primary
 
 block content
-    h1 Building...
-    h2 Buscnado MathJax
+    p When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
+
+block scripts
+    script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")
