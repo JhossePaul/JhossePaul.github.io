@@ -1,5 +1,5 @@
 'use strict'
-gulp        = require "gulp
+gulp        = require "gulp"
 browserSync = require "browser-sync"
 config      = require "./config"
 onError     = require "./error"

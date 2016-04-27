@@ -4,11 +4,13 @@ browserSync = require "browser-sync"
 onError     = require "./error"
 plugins     = require "gulp-load-plugins"
 $           = plugins()
-config      = require "./config"
 
-gulp.task "fonts", ->
-    gulp.src config.fonts
+gulp.task "jade", ->
+    gulp.src "./src/jade/**/!(_)*.jade"
     .pipe $.plumber(errorHandler: onError)
-    .pipe $.cache($.cssfont64())
-    .pipe $.concat("fonts.css")
-    .pipe gulp.dest("./dist/css")
+    .pipe $.accord "jade",
+        pretty: true
+        basedir: "./src/jade"
+    .pipe gulp.dest "./dist"
+    .pipe browserSync.reload
+        stream: true

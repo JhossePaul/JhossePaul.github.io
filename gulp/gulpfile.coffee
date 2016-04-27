@@ -32,6 +32,7 @@ gulp.task "watch", ["browsersync"], ->
     gulp.watch "src/assets/**", ["assets"]
     gulp.watch "src/svg/**", ["svg", "jade"]
     gulp.watch "src/fonts/**", ["fonts"]
+    gulp.watch "gulp/tasks/config.coffee", ["scripts"]
 
 # Default task
 gulp.task "default", ->
@@ -42,7 +43,7 @@ gulp.task "default", ->
         "sass",
         "imagemin",
         "assets",
-        "pug",
+        "jade",
         "watch"
 
 

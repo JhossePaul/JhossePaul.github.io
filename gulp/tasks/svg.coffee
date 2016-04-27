@@ -45,4 +45,4 @@ gulp.task 'svg:external', ->
 # Run Both Tasks on a Single Call :)
 gulp.task 'svg', ->
     runSequence 'svg:inline',
-        'svg:extenal'
+        'svg:external'

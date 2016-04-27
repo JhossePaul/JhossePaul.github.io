@@ -19,5 +19,5 @@ gulp.task "imagemin", ->
         }]
         use: [pngquant()]
     )
-    .pipe gulp.dest ",/dist/img"
+    .pipe gulp.dest "./dist/img"
     .pipe browserSync.reload(stream: true)

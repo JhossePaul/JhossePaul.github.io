@@ -8,6 +8,6 @@ $           = plugins()
 
 gulp.task "assets", -> 
     gulp.src "./src/assets/**/*"
-    .pipe $.plumber(errorHanlder: error)
+    .pipe $.plumber(errorHanlder: onError)
     .pipe gulp.dest "./dist/assets"
     .pipe browserSync.reload(stream: true)

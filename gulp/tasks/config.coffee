@@ -5,7 +5,9 @@ module.exports =
     ]
     # Acá se añaden las rutas a los archivos js obtenidos por bower
     scriptFiles: [
-        # "./src/bower/jquery/dist/jquery.min.js"
+        "./src/bower/jquery/dist/jquery.min.js"
+        "./src/bower/MathJax/MathJax.js"
+        "./src/bower/reveal.js/js/reveal.js"
     ]
     # Archivos HTML que deben pasar por uncss
     uncssHTML: [

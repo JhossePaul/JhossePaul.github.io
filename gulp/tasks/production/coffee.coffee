@@ -15,9 +15,3 @@ gulp.task 'production:coffee', ->
         preserveComments : 'license'
     .pipe gulp.dest './dist/js/'
     .pipe browserSync.reload(stream : true)
-                  
-                  
-                  
-                  
-                  
-                  "
