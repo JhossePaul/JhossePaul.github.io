@@ -193,9 +193,10 @@ p.copyright {
                 
 .icon {
     width: 80%;
-    margin: auto;
+    margin: 15px auto;
     display: block;
-    position: absolute;
+    position: relative;
+    vertical-align: middle;
 }
 
 .icon:hover {

@@ -1,9 +1,7 @@
 (function() {
   var color, dygraph, force, height, svg, width;
 
-  dygraph = new Dygraph(document.getElementById("dygraph"), "/assets/data/dygraph.csv", {
-    title: "Time Series Analysis"
-  });
+  dygraph = new Dygraph(document.getElementById("dygraph"), "/assets/data/dygraph.csv");
 
   MathJax.Hub.Config({
     tex2jax: {
