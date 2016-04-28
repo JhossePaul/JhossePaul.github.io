@@ -1,0 +1,129 @@
+extends layouts/_layout-primary
+
+block content
+    a(name="about")
+    div.intro-header
+        div.container
+            div.col-lg-12
+                div.intro-message
+                    h1 Theoretical Biologist & Data Scientist
+                    h3 If you can measure it, you can analyze it
+                    hr.intro-divider
+                    ul.list-inline.intro-social-buttons
+                        li
+                            a.btn.btn-default.btn-lg(href="https://twitter.com/JPaulMR", target="_blank")
+                                i.fa.fa-twitter.fa-fw
+                                span.network-name Twitter
+                        li
+                            a.btn.btn-default.btn-lg(href="https://github.com/JhossePaul/", target="_blank")
+                                 i.fa.fa-github.fa-fw
+                                 span.network-name Github
+                        li
+                            a.btn.btn-default.btn-lg(href="https://mx.linkedin.com/in/jhossepaul", target="_blank")
+                                i.fa.fa-linkedin.fa-fw
+                                span.network-name Linkedin
+                        li
+                            a.btn.btn-default.btn-lg(href="/assets/docs/resume.pdf", target="_blank")
+                                i.fa.fa-fw.fa-file-text-o
+                                span.network-name Resumé
+    a(name="services")
+        div.content-section-a
+            div.container
+                div.row
+                    div.col-lg-5.col-sm-6
+                        hr.section-heading-spacer
+                        div.clearfix
+                        h2.section-heading Unleash the knowledge
+                        p.lead.
+                             Powerful analytics from a scientific perspective. No matter the 
+                             kind or amount of data, you can always get useful insights.
+                        //- button.btn.btn-primary.btn-lg Read more
+                    div.col-lg-5.col-sm-6.pull-left
+                        #dygraph
+
+       div.content-section-b
+            div.container
+                div.row
+                    div.col-lg-5.col-sm-6.col-lg-offset-1.col-sm-push-6.col-sm-6
+                        hr.section-heading-spacer
+                        div.clearfix
+                        h2.section-heading Mathematical and Theoretical Biology
+                        p.lead.
+                            A robust fresh up-to-date approach to evolutionary and ecological 
+                            theory through dynamical systems, stochastic processes, 
+                            network analysis and complex systems.
+                            
+                            $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
+                            
+                        //- button.btn.btn-primary.btn-lg.pull-right Read more
+                            
+                    div.col-lg-5.col-sm-6.col-sm-pull-6
+                        #network
+                            
+        div.content-section-a
+            div.container
+                div.row
+                    div.col-lg-5.col-sm-6
+                        hr.section-heading-spacer
+                        div.clearfix
+                        h2.section-heading Scientific Computing & Data Visualization
+                        p.lead.
+                            Great expertise in data analysis and highly creative realtime
+                            visualization with the best and most popular scientific
+                            programming languages and plotting tools.
+                        //- button.btn.btn-primary.btn-lg Read more
+                    div.col-lg-5.col-sm-6.text-center.col-lg-offset-2
+                        div.row
+                            div.col-sm-4
+                                a(href="https://cran.r-project.org/", target="_blank")
+                                    img.icon.img-responsive(src="/img/logos/rlogo.png")
+                            div.col-sm-4
+                                a(href="https://www.python.org/", target="_blank")
+                                    img.icon.img-responsive(src="/img/logos/python.png")
+                            div.col-sm-4
+                                a(href="https://d3js.org/", target="_blank")
+                                    img.icon.img-responsive(src="/img/logos/d3js.png")
+                        div.row
+                            div.col-sm-4
+                                a(href="https://www.gnu.org/software/octave/", target="_blank")
+                                    img.icon.img-responsive(src="/img/logos/octave.png")
+                            div.col-sm-4
+                                a(href="http://www.mathworks.com/products/matlab/")
+                                    img.icon.img-responsive(src="/img/logos/matlab.png")
+                            div.col-sm-4
+                                a(href="http://julialang.org/")
+                                    img.icon.img-responsive(src="/img/logos/julia.png")
+
+        div.content-section-b
+            div.container
+                div.row
+                    div.col-lg-5.col-sm-6.col-sm-push-6
+                        hr.section-heading-spacer
+                        div.clearfix
+                        h2.section-heading Web Developer & Document Composition
+                        p.lead.
+                            Beautiful responsive web design to run, display and distribute your 
+                            analytics results with realtime descriptive statistics of your 
+                            databases. If you
+                        //- button.btn.btn-primary.btn-lg Read more
+                    div.col-lg-5.col-sm-6.col-sm-pull-6
+                        div.row
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/html.png")
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/css.png")
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/js.png")
+                        div.row
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/php.png")
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/markdown.png")
+                            div.col-sm-4
+                                img.icon.img-responsive(src="/img/logos/nodejs.png")
+
+                                
+
+
+block scripts
+    script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")

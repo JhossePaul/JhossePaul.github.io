@@ -192,10 +192,16 @@ p.copyright {
 }
                 
 .icon {
-    width: 100%;
-    margin: auto;
+    width: 80%;
+    margin: 15px auto;
     display: block;
     position: relative;
+    vertical-align: middle;
+}
+
+.icon:hover {
+    transition: width 0.5s ease;
+    width: 90%;
 }
 
 #dygraph {
@@ -203,9 +209,8 @@ p.copyright {
     height: 300px;
 }
 
-
 .node {
-    stroke: #fff;
+    stroke: #eee;
     stroke-width: 1.5px;
 }
     
@@ -213,3 +218,4 @@ p.copyright {
     stroke: #999;
     stroke-opacity: .6;
 }
+

@@ -1,14 +1,4 @@
-dygraph = new Dygraph(
-    document.getElementById "dygraph"
-    "/assets/data/dygraph.csv"
-        title: "Time Series Analysis"
-)
-
-MathJax.Hub.Config(
-    tex2jax: 
-        inlineMath: [["$", "$"], ["\\(", "\\)"]]
-)
-
+console.log "d3.js Network"
 width  = 600
 height = 300
 color  = d3.scale.category20()
@@ -66,3 +56,5 @@ d3.json(
             return
         return
 )
+
+
