@@ -10,16 +10,15 @@ html(lang="es")
         
         title Jhosse Paul Márquez Ruíz - Data Scientist/Biologist
         
-        //- Favicons and Android NavBar color
-        //- link(rel="icon", href="/img/favicon.ico")
         link(rel="shortcut icon", type="image/png", href="/img/favicon.png")
-
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css")
-        link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css")
         link(rel="stylesheet", href="css/fonts.css")
         link(rel="stylesheet", href="assets/animate.css")
         link(rel="stylesheet", href="assets/landing-page.css")
-        
+
+        script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+        script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
         block head
             // Librerías extra
         
@@ -32,7 +31,7 @@ html(lang="es")
         nav(class=navclasses, role="navigation")
             div.container.topnav
                 div.navbar-header
-                    button.navbar-toggle(type="button", data-toggle="collapse" data-target="#bs-example-nabar-collapse-1")
+                    button.navbar-toggle(type="button", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
                         span.sr-only Toogle navigation
                         span.icon-bar
                         span.icon-bar
@@ -40,7 +39,7 @@ html(lang="es")
                     a.navbar-brand.topnav(href="#") 
                         img.logo(src="/img/favicon.png")
                         span.titulo Paul Márquez Ruíz
-                #bs-example-navbar-collapse-1.navbar-collapse
+                #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav.navbar-right
                         li
                             a(href="#about") About
@@ -54,7 +53,7 @@ html(lang="es")
         block footer
             //- Footer de la página
 
-        script(src="js/vendor.js")
+        script(src="js/vendor.js")        
         block scripts
             //- Scripts extra
         script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js")

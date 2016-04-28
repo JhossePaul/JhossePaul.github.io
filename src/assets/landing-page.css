@@ -202,3 +202,14 @@ p.copyright {
     width: 700px;
     height: 300px;
 }
+
+
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+    
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
