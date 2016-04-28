@@ -10,7 +10,7 @@ module.exports =
         "./src/bower/jquery/dist/jquery.min.js"
         "./src/bower/wow/dist/wow.min.js"
         "./src/bower/d3/d3.min.js"
-        "./src/bower/dygraphs/dygraph.js"
+        "./src/bower/dygraphs/dygraph-combined.js"
 
     ]
     # Archivos HTML que deben pasar por uncss

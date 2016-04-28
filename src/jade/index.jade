@@ -5,8 +5,8 @@ block content
     div.intro-header
         div.container
             div.col-lg-12
+                //- img.profile-picture(src="/img/cv.jpg")
                 div.intro-message
-                    img.img-responsive.img-thumbnail(src="/img/cv.jpg", height=50)
                     h1 Theoretical Biologist & Data Scientist
                     h3 If you can measure it, you can analyze it
                     hr.intro-divider
@@ -31,9 +31,10 @@ block content
                         hr.section-heading-spacer
                         div.clearfix
                         h2.section-heading Unleash the power of your data
-                        p.lead Powerful analytics with a scientific perspective
-                    div.col-lg-5.col-sm-6.col-lg-offset-2
-                        img.img-responsive(src="http://maxcdn.webappers.com/img/2009/12/dygraphs-javascript.jpg")
+                        p.lead Powerful analytics from a scientific perspective
+                        button.btn.btn-primary Read more about
+                    div.col-lg-5.col-sm-6.pull-left
+                        #dygraph
         div.content-section-b
             div.container
                 div.row
@@ -45,7 +46,7 @@ block content
                             A robust fresh up-to-date approach to evolutionary and ecological theory through dynamical system, stochastic processes and network analysis
                             $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
                         div.col-lg-5.col-sm-pull-6.col-sm-6
-                            img.img-responsive(src="/img/dynamics.png")
+                            #network
                             
         div.content-section-a
             div.container

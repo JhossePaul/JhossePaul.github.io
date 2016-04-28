@@ -163,9 +163,13 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+/*
 .profile-picture {
-    height: 200px;
+    height: 250px;
+    margin-top: 5%;
+    border: 2px solid white;
 }
+*/
 
 .logo {
     height: 150%;
@@ -192,4 +196,9 @@ p.copyright {
     margin: auto;
     display: block;
     position: relative;
+}
+
+#dygraph {
+    width: 700px;
+    height: 300px;
 }
