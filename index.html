@@ -8,12 +8,14 @@
     <meta name="author" content="Paul Márquez">
     <meta name="theme-color" content="#2ba5e0">
     <title>Jhosse Paul Márquez Ruíz - Data Scientist/Biologist</title>
-    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="assets/animate.css">
     <link rel="stylesheet" href="assets/landing-page.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <!-- Librerías extra-->
   </head>
   <body>
@@ -22,9 +24,9 @@
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top topnav">
       <div class="container topnav">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#bs-example-nabar-collapse-1" class="navbar-toggle"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand topnav"> <img src="/img/favicon.png" class="logo"><span class="titulo">Paul Márquez Ruíz</span></a>
+          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand topnav"> <img src="/img/favicon.png" class="logo"><span class="titulo">Paul Márquez Ruíz</span></a>
         </div>
-        <div id="bs-example-navbar-collapse-1" class="navbar-collapse">
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -36,7 +38,7 @@
     <div class="intro-header">
       <div class="container">
         <div class="col-lg-12">
-          <div class="intro-message"><img src="/img/cv.jpg" height="50" class="img-responsive img-thumbnail">
+          <div class="intro-message">
             <h1>Theoretical Biologist & Data Scientist</h1>
             <h3>If you can measure it, you can analyze it</h3>
             <hr class="intro-divider">
@@ -56,9 +58,12 @@
               <hr class="section-heading-spacer">
               <div class="clearfix"></div>
               <h2 class="section-heading">Unleash the power of your data</h2>
-              <p class="lead">Powerful analytics with a scientific perspective</p>
+              <p class="lead">Powerful analytics from a scientific perspective</p>
+              <button class="btn btn-primary">Read more about</button>
             </div>
-            <div class="col-lg-5 col-sm-6 col-lg-offset-2"><img src="http://maxcdn.webappers.com/img/2009/12/dygraphs-javascript.jpg" class="img-responsive"></div>
+            <div class="col-lg-5 col-sm-6 pull-left">
+              <div id="dygraph"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,7 +78,9 @@
                 A robust fresh up-to-date approach to evolutionary and ecological theory through dynamical system, stochastic processes and network analysis
                 $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
               </p>
-              <div class="col-lg-5 col-sm-pull-6 col-sm-6"><img src="/img/dynamics.png" class="img-responsive"></div>
+              <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                <div id="network"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -105,9 +112,9 @@
           </div>
         </div>
       </div></a>
+    <script src="js/vendor.js">       </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/vendor.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
