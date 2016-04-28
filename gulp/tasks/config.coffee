@@ -9,6 +9,9 @@ module.exports =
     scriptFiles: [
         "./src/bower/jquery/dist/jquery.min.js"
         "./src/bower/wow/dist/wow.min.js"
+        "./src/bower/d3/d3.min.js"
+        "./src/bower/dygraphs/dygraph.js"
+
     ]
     # Archivos HTML que deben pasar por uncss
     uncssHTML: [

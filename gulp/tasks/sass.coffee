@@ -8,16 +8,16 @@ $             = plugins()
 
 
 gulp.task 'sass', ->
-  gulp.src './src/sass/**/!(_)*.sass'
-  .pipe $.plumber(errorHandler: onError)
-  .pipe $.sourcemaps.init()
-  .pipe $.sass
-    includePaths : config.sassIncludes
-    outputStyle : 'nested'
-  .pipe $.autoprefixer
-    browsers : ['last 2 versions']
-  .pipe $.groupCssMediaQueries()
-  .pipe $.csscomb()
-  .pipe $.sourcemaps.write './'
-  .pipe gulp.dest './dist/css/'
-  .pipe browserSync.reload(stream : true)
+    gulp.src './src/sass/**/!(_)*.sass'
+    .pipe $.plumber(errorHandler: onError)
+    .pipe $.sourcemaps.init()
+    .pipe $.sass
+        includePaths : config.sassIncludes
+        outputStyle : 'nested'
+    .pipe $.autoprefixer
+        browsers : ['last 2 versions']
+    .pipe $.groupCssMediaQueries()
+    .pipe $.csscomb()
+    .pipe $.sourcemaps.write './'
+    .pipe gulp.dest './dist/css/'
+    .pipe browserSync.reload(stream : true)

@@ -7,11 +7,11 @@ $             = plugins()
 
 
 gulp.task 'jade', ->
-  gulp.src './src/jade/**/!(_)*.jade'
-  .pipe $.plumber(errorHandler: onError)
-  .pipe $.accord 'jade',
-    pretty : true
-    basedir : './src/jade'
-  .pipe gulp.dest './dist'
-  .pipe browserSync.reload
-    stream: true
+    gulp.src './src/jade/**/!(_)*.jade'
+    .pipe $.plumber(errorHandler: onError)
+    .pipe $.accord 'jade',
+        pretty : true
+        basedir : './src/jade'
+    .pipe gulp.dest './dist'
+    .pipe browserSync.reload
+        stream: true

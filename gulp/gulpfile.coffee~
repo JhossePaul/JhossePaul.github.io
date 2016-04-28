@@ -31,7 +31,7 @@ gulp.task 'watch', ['browsersync'], ->
     gulp.watch 'src/assets/**', ['assets']
     gulp.watch 'src/svg/**', ['svg', 'jade']
     gulp.watch 'src/fonts/**/*', ['fonts']
-    gulp.watch 'gulp/tasks/config.coffee', ["scripts", "sass"]
+    gulp.watch 'gulp/tasks/config.coffee'
 
 # Default Task Because YOLO
 gulp.task 'default', ->

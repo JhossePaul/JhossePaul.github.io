@@ -1,40 +1,28 @@
 extends layouts/_layout-primary
 
 block content
-
-    section.sample
-        .container
-            .row--flex.vertical
-                svg.icon.odin
-                use(xlink:href='#odin')
-            h1 Bienvenidos
-            h4 Ground Zero
-
     a(name="about")
     div.intro-header
         div.container
-            div.row
-                svg.icon.odin
-                use(xlink:href='#odin')
-                div.col-lg-12
-                    div.intro-message
-                        img.img-responsive.img-thumbnail.profile-picture(src="/img/cv.jpg")
-                        h1 Theoretical Biologist & Data Scientist
-                        h3 If you can measure it, you can analyze it
-                        hr.intro-divider
-                        ul.list-inline.intro-social-buttons
-                            li
-                                a.btn.btn-default.btn-lg(href="https://twitter.com/JPaulMR")
-                                    i.fa.fa-twitter.fa-fw
-                                    span.network-name Twitter
-                            li
-                                a.btn.btn-default.btn-lg(href="https://github.com/JhossePaul/")
-                                    i.fa.fa-github.fa-fw
-                                    span.network.name Github
-                            li
-                                a.btn.btn-default.btn-lg(href="https://mx.linkedin.com/in/jhossepaul")
-                                    i.fa.fa-linkedin.fa-fw
-                                    span.network.name Linkedin
+            div.col-lg-12
+                div.intro-message
+                    img.img-responsive.img-thumbnail(src="/img/cv.jpg", height=50)
+                    h1 Theoretical Biologist & Data Scientist
+                    h3 If you can measure it, you can analyze it
+                    hr.intro-divider
+                    ul.list-inline.intro-social-buttons
+                        li
+                            a.btn.btn-default.btn-lg(href="https://twitter.com/JPaulMR")
+                                i.fa.fa-twitter.fa-fw
+                                span.network-name Twitter
+                        li
+                            a.btn.btn-default.btn-lg(href="https://github.com/JhossePaul/")
+                                 i.fa.fa-github.fa-fw
+                                 span.network-name Github
+                        li
+                            a.btn.btn-default.btn-lg(href="https://mx.linkedin.com/in/jhossepaul")
+                                i.fa.fa-linkedin.fa-fw
+                                span.network-name Linkedin
     a(name="services")
         div.content-section-a
             div.container
@@ -70,9 +58,12 @@ block content
                             Great expertise in data analysis. Highly creative real-time visualization with the 
                             best and most popular scientific programming languages
                     div.col-lg-5.col-lg-offset-2.col-sm-6
-                        div.col-sm-4 
-                            svg.icon.odin
-                                use(xlink:href='#odin')
+                        div.col-sm-6 
+                            svg.icon
+                                use(xlink:href='#rlogo')
+                        div.col-sm-6
+                            svg.icon
+                                use(xlink:href="#python")
 
 block scripts
     script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")

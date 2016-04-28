@@ -7,7 +7,7 @@ $             = plugins()
 
 
 gulp.task 'assets', ->
-    gulp.src './src/assets/**/*'
-    .pipe $.plumber(errorHandler: onError)
-    .pipe gulp.dest './dist/assets/'
-    .pipe browserSync.reload(stream : true)
+  gulp.src './src/assets/**/*'
+  .pipe $.plumber(errorHandler: onError)
+  .pipe gulp.dest './dist/assets/'
+  .pipe browserSync.reload(stream : true)

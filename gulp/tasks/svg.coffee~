@@ -17,6 +17,9 @@ gulp.task 'svg:inline', ->
     inlineSvg : true
   )
   .pipe $.cheerio(
+    run: (jQuery) ->
+      jQuery('[fill]').removeAttr 'fill'
+      jQuery('[stroke]').removeAttr 'stroke'
     parserOptions :
       xmlMode : true
   )

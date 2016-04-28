@@ -1,5 +1,5 @@
 'use strict'
-gulp  = require 'gulp'
+gulp = require 'gulp'
 clean = require 'del'
 
 gulp.task 'clean', ->

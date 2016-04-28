@@ -2,9 +2,9 @@
 gulp        = require 'gulp'
 pngquant    = require 'imagemin-pngquant'
 browserSync = require 'browser-sync'
-onError     = require './error'
-plugins     = require 'gulp-load-plugins'
-$           = plugins()
+onError       = require './error'
+plugins       = require 'gulp-load-plugins'
+$             = plugins()
 
 gulp.task 'imagemin', ->
     gulp.src './src/img/**/*'

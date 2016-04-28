@@ -167,3 +167,29 @@ p.copyright {
     height: 200px;
 }
 
+.logo {
+    height: 150%;
+    float: left;
+    margin-right: 15px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 1em;
+    color: darkblue;
+}
+
+
+.is-hidden {
+    position: absolute;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+                
+.icon {
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+}

@@ -16,7 +16,7 @@ html(lang="es")
         link(rel="icon", type="image/png", href="img/favicon.png")
         
         link(rel="stylesheet", href="css/fonts.css")
-        link(rel="stylesheet", href="css/odin.css")            
+        //- link(rel="stylesheet", href="css/odin.css")            
         link(rel="stylesheet", href="assets/animate.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css")
         link(rel="stylesheet", href="assets/landing-page.css")
@@ -26,6 +26,9 @@ html(lang="es")
             // Librerías extra
         
     body
+        div.is-hidden
+            include ./includes/inline.svg
+
         //- Navigation
         - var navclasses = ["navbar", "navbar-default", "navbar-fixed-top", "topnav"]
         nav(class=navclasses, role="navigation")
@@ -36,7 +39,9 @@ html(lang="es")
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                    a.navbar-brand.topnav(href="#") Paul Márquez
+                    a.navbar-brand.topnav(href="#") 
+                        img.logo(src="/img/favicon.png")
+                        span.titulo Paul Márquez Ruíz
                 #bs-example-navbar-collapse-1.navbar-collapse
                     ul.nav.navbar-nav.navbar-right
                         li 
@@ -53,6 +58,6 @@ html(lang="es")
         
         block scripts
             //- Scripts extra
-        script(src="js/vendor.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js")
+        script(src="js/vendor.js")
         script(src="js/app.js")
