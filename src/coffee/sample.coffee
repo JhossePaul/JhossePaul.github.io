@@ -9,8 +9,8 @@ MathJax.Hub.Config(
         inlineMath: [["$", "$"], ["\\(", "\\)"]]
 )
 
-width  = 500
-height = 500
+width  = 600
+height = 300
 color  = d3.scale.category20()
 force  = d3.layout.force()
     .charge(-120)
