@@ -55,11 +55,10 @@ block content
                         
                         $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
                         
-                    //- button.btn.btn-primary.btn-lg.pull-right Read more
-                        
+                        //- button.btn.btn-primary.btn-lg.pull-right Read more
                 div.col-lg-5.col-sm-6.col-sm-pull-6
                     #network
-                        
+                    
     div.content-section-a
         div.container
             div.row
@@ -157,6 +156,8 @@ block content
                             img.icon.img-responsive(src="/img/dbs/orientdb.png")
                         div.col-sm-4
                             img.icon.img-responsive(src="/img/dbs/neo4j.png")
+
+    a(name="contact")
     div.banner
         div.container
             div.row
@@ -164,18 +165,55 @@ block content
                     h2 Contact me
                 div.col-lg-6
                     ul.list-inline.banner-social-buttons
-                        li
-                            a.btn.btn-default.btn-lg(href="#")
-                                i.fa.fa-fw.fa-twitter
-                                span.network-name Twitter
-                        li
-                            a.btn.btn-default.btn-lg(href="#")
-                                i.fa.fa-fw.fa-github
-                                span.network-name Github
-                        li
-                            a.btn.btn-default.btn-lg(href="#")
-                                i.fa.fa-fw.fa-linkedin
-                                span.network-name Linkedin
-                        
+                        li: a.btn.btn-default.btn-lg(href="#")
+                            i.fa.fa-fw.fa-twitter
+                            span.network-name Twitter
+                        li: a.btn.btn-default.btn-lg(href="#")
+                            i.fa.fa-fw.fa-github
+                            span.network-name Github
+                        li: a.btn.btn-default.btn-lg(href="#")
+                            i.fa.fa-fw.fa-linkedin
+                            span.network-name Linkedin
+                        li: button.btn.btn-default.btn-lg(type="button", data-toggle="modal", data-target="#formulario")
+                            i.fa.fa-fw.fa-envelope
+                            span.network-name email
+                            
+    #formulario.modal.fade(role="dialog")
+        div.modal-dialog
+            div.modal-content
+                div.modal-header
+                    button.close(type="button", data-dismiss="modal") &times;
+                    h4.modal-title Send me an email, I will reply as soon as posible
+
+                div.modal-body
+                    form.form-horizontal(role="form", method="POST", action="https://formspree.io/mcromanceva@hotmail.com")
+                        div.row
+                            div.form-group.col-sm-6
+                                label.control-label.col-sm-4(for="name") Name: 
+                                div.col-sm-8
+                                   input.form-control(name="name", id="name", type="text", placeholder="Name ")
+                            div.form-group.col-sm-6
+                                label.control-label.col-sm-4(for="company") Company: 
+                                div.col-sm-8
+                                    input.form-control(name="company", id="company", type="text", placeholder="Company")
+                        div.row
+                            div.form-group.col-sm-6
+                                label.control-label.col-sm-4(for="email") Email:
+                                div.col-sm-8
+                                    input.form-control(name="email", type="email", id="email", placeholder="user@domain.com")
+                            div.form-group.col-sm-6
+                                label.control-label.col-sm-4(for="phone") Phone:
+                                div.col-sm-8
+                                    input.form-control(name="phone", type="text", id="phone", placeholder="000 000 0000")
+                        div.row
+                            div.form-group.col-sm-12
+                                label.control-label.col-sm-2(for="description") Description:
+                                div.col-sm-10
+                                    textarea.form-control(name="description", id="description")
+                        div.row
+                            div.form-group
+                                div.col-sm-5.col-sm-offset-2
+                                    button.btn.btn-primary(type="submit") Send
+
 block scripts
     script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")

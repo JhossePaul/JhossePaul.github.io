@@ -219,3 +219,6 @@ p.copyright {
     stroke-opacity: .6;
 }
 
+.footer-menu-divider::before {
+    content: "\00B7";
+}
