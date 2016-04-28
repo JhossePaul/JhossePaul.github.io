@@ -83,6 +83,7 @@
               
               $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
               
+              //- button.btn.btn-primary.btn-lg.pull-right Read more
             </p>
           </div>
           <div class="col-lg-5 col-sm-6 col-sm-pull-6">
@@ -180,7 +181,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><a name="contact"></a>
     <div class="banner">
       <div class="container">
         <div class="row">
@@ -192,11 +193,90 @@
               <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-fw fa-twitter"></i><span class="network-name">Twitter</span></a></li>
               <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-fw fa-github"></i><span class="network-name">Github</span></a></li>
               <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-fw fa-linkedin"></i><span class="network-name">Linkedin</span></a></li>
+              <li>
+                <button type="button" data-toggle="modal" data-target="#formulario" class="btn btn-default btn-lg"><i class="fa fa-fw fa-envelope"></i><span class="network-name">email</span></button>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <div id="formulario" role="dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">&times;</button>
+            <h4 class="modal-title">Send me an email, I will reply as soon as posible</h4>
+          </div>
+          <div class="modal-body">
+            <form role="form" method="POST" action="https://formspree.io/mcromanceva@hotmail.com" class="form-horizontal">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="name" class="control-label col-sm-4">Name: </label>
+                  <div class="col-sm-8">
+                    <input name="name" id="name" type="text" placeholder="Name " class="form-control">
+                  </div>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="company" class="control-label col-sm-4">Company: </label>
+                  <div class="col-sm-8">
+                    <input name="company" id="company" type="text" placeholder="Company" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label for="email" class="control-label col-sm-4">Email:</label>
+                  <div class="col-sm-8">
+                    <input name="email" type="email" id="email" placeholder="user@domain.com" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="phone" class="control-label col-sm-4">Phone:</label>
+                  <div class="col-sm-8">
+                    <input name="phone" type="text" id="phone" placeholder="000 000 0000" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12">
+                  <label for="description" class="control-label col-sm-2">Description:</label>
+                  <div class="col-sm-10">
+                    <textarea name="description" id="description" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <div class="col-sm-5 col-sm-offset-2">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li class="footer-menu-divider"></li>
+            <li><a href="#about">About</a></li>
+            <li class="footer-menu-divider"></li>
+            <li><a href="#services">Services</a></li>
+            <li class="footer-menu-divider"></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <p class="copyright text-muted small">
+            Copyright &copy; Paul Márquez 2016. All rights Reserved
+            
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="js/vendor.js">       </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
