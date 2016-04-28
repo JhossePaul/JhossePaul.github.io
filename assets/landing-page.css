@@ -192,13 +192,29 @@ p.copyright {
 }
                 
 .icon {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: block;
-    position: relative;
+    position: absolute;
+}
+
+.icon:hover {
+    transition: width 0.5s ease;
+    width: 90%;
 }
 
 #dygraph {
     width: 700px;
     height: 300px;
 }
+
+.node {
+    stroke: #eee;
+    stroke-width: 1.5px;
+}
+    
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
