@@ -1,13 +1,23 @@
 (function() {
-  var color, dygraph, force, height, svg, width;
+  var dygraph;
 
   dygraph = new Dygraph(document.getElementById("dygraph"), "/assets/data/dygraph.csv");
 
+}).call(this);
+
+(function() {
   MathJax.Hub.Config({
     tex2jax: {
       inlineMath: [["$", "$"], ["\\(", "\\)"]]
     }
   });
+
+}).call(this);
+
+(function() {
+  var color, force, height, svg, width;
+
+  console.log("d3.js Network");
 
   width = 600;
 
