@@ -33,11 +33,12 @@ block content
                 div.col-lg-5.col-sm-6
                     hr.section-heading-spacer
                     div.clearfix
-                    h2.section-heading Unleash the knowledge
+                    h2.section-heading Data Science 
+                        small Unleash the knowledge
                     p.lead.
                         Powerful analytics from a scientific perspective. No matter the 
                          kind or amount of data, you can always get useful insights.
-                    //- button.btn.btn-primary.btn-lg Read more
+                    //- a.btn.btn-primary.btn-lg(href="/") Read more
                 div.col-lg-5.col-sm-6.pull-left
                     #dygraph
 
@@ -47,14 +48,16 @@ block content
                 div.col-lg-5.col-sm-6.col-lg-offset-1.col-sm-push-6.col-sm-6
                     hr.section-heading-spacer
                     div.clearfix
-                    h2.section-heading Mathematical and Theoretical Biology
+                    h2.section-heading Theoretical Biology
                     p.lead.
                         A robust fresh up-to-date approach to evolutionary and ecological 
                         theory through dynamical systems, stochastic processes, 
                         network analysis and complex systems.
                         
                         $$ \dot{x}_i =  x_{i} [f_i(x) - \phi(x) ], \phi(x) = \sum x_j f_j(x) $$
-                    //- button.btn.btn-primary.btn-lg.pull-right Read more
+                        
+                       
+                    //- a.btn.btn-primary.btn-lg.pull-right(href="/") Read more
                 div.col-lg-5.col-sm-6.col-sm-pull-6
                     #network
                     
@@ -66,7 +69,7 @@ block content
                     div.clearfix
                     h2.section-heading Scientific Computing & Data Visualization
                     p.lead.
-                        Great expertise in data analysis and highly creative realtime
+                        Great expertise on data analysis and highly creative realtime
                         visualization with the best and most popular scientific
                         programming languages and plotting tools.
                     //- button.btn.btn-primary.btn-lg Read more
@@ -133,7 +136,7 @@ block content
                 div.col-lg-5.col-sm-6
                     hr.section-heading-spacer
                     div.clearfix
-                    h2.section-heading Web Scraping and Data Warehouse
+                    h2.section-heading Data Warehouse
                     p.lead.
                         The most significant process to analyze data is getting and storing
                         data! The raw data is everywhere, almost every phenomenon in the
@@ -216,4 +219,7 @@ block content
                                     button.btn.btn-primary(type="submit") Send
 
 block scripts
-    script(src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js")
+    script(src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML")
+    script(src="js/app.js")
+

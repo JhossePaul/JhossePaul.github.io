@@ -19,6 +19,8 @@ html(lang="es")
 
         script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
         script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+        script(src="js/vendor.js")        
+
         block head
             // Librerías extra
         
@@ -36,17 +38,14 @@ html(lang="es")
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                    a.navbar-brand.topnav(href="#") 
+                    a.navbar-brand.topnav(href="/") 
                         img.logo(src="/img/favicon.png")
                         span.titulo Paul Márquez Ruíz
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav.navbar-right
-                        li
-                            a(href="#about") About
-                        li
-                            a(href="#services") Services
-                        li
-                            a(href="#contact") Contact
+                        li: a(href="/#about") About
+                        li: a(href="/#services") Services
+                        li: a(href="/#contact") Contact
 
         block content
             //- Contenido de la página
@@ -63,10 +62,6 @@ html(lang="es")
                         li.footer-menu-divider
                         li: a(href="#contact") Contact
                     p.copyright.text-muted.small.
-                        Copyright &copy; Paul Márquez 2016. All rights Reserved
-        
-        script(src="js/vendor.js")        
+                        Copyright &copy; Paul Márquez 2016. All rights Reserved        
         block scripts
             //- Scripts extra
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js")
-        script(src="js/app.js")

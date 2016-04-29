@@ -11,7 +11,7 @@ module.exports =
         "./src/bower/wow/dist/wow.min.js"
         "./src/bower/d3/d3.min.js"
         "./src/bower/dygraphs/dygraph-combined.js"
-
+        "./src/bower/bootstrap/dist/js/bootstrap.js"
     ]
     # Archivos HTML que deben pasar por uncss
     uncssHTML: [
